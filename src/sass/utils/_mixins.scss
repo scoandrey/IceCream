@@ -1,0 +1,29 @@
+@import './decimals';
+
+
+@mixin fonts($fs, $lh, $fw: false, $ls: 0.04em) {
+    @if $fw {
+        font-weight: $fw;
+    }
+
+    font-size: $fs;
+    line-height: decimal-round($lh / $fs);
+    letter-spacing: $ls;
+}
+
+// Vers 2
+
+// @mixin fonts($fs, $lh, $fw: false, $ls: 0.04em) {
+//     @if $fw {
+//         font-weight: $fw;
+//     }
+
+//     font-size: $fs;
+
+//     @if $lh and $fs {
+//         $lhToMultiplier: calc($lh / $fs);
+//         line-height: decimal-round($lhToMultiplier);
+//     }
+
+//     letter-spacing: $ls;
+// }

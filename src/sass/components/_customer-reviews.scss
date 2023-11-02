@@ -1,0 +1,169 @@
+.customer-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background: none;
+    // padding-top: 80px;
+    // background-size: cover;
+    // background-position: center;
+    // background-color: #C4C4C4;
+    // background-image: url(../images/mobile-bg@1x.jpg);
+
+    // @media screen and (min-width: $mobile) {
+    //     background-image: url(../images/mobile-bg@1x.jpg);
+
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //         background-image: url(../images/mobile-bg@2x.jpg);
+    //     }
+    // }
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 80px;
+        // padding-top: 100px;
+        // background-image: url(../images/tablet-bg@1x.jpg);
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image: line-height url(../images/tablet-bg@2x.jpg);
+        // }
+    }
+
+    @media screen and (min-width: $desktop) {
+        // padding-top: 140px;
+        padding-bottom: 100px;
+        // background-image: url(../images/desctop-bg@1x.jpg);
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image: url(../images/desctop-bg@2x.jpg);
+        // }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding-left: 20px;
+        // padding-right: 20px;
+        // padding-bottom: 393px;
+
+        // @media screen and (min-width: $tablet) {
+        //     padding-bottom: 379px;
+        // }
+    }
+
+    &__review {
+        width: 280px;
+        height: 256px;
+        margin-top: 32px;
+        padding: 35px 39px;
+        background: var(--primary-bg);
+        border-radius: 10px;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+            width: 705px;
+            height: 138px;
+            padding: 28px 80px 29px 80px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 968px;
+            height: 138px;
+            padding: 43px 109px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        width: 202px;
+        height: 186px;
+        margin: 0;
+        font-size: 12px;
+        line-height: 2.55;
+        color: var(--secondary-bg);
+
+        @media screen and (min-width: $tablet) {
+            width: 545px;
+            height: 81px;
+            font-weight: 500;
+            line-height: 1.86;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 750px;
+            height: 52px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.86;
+        }
+    }
+
+    &__name {
+        margin-top: 32px;
+        margin-bottom: 12px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__name-text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.86;
+        text-align: center;
+        color: var(--secondary-text);
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: 1.86;
+        }
+    }
+
+    // &__icon-first {
+    //     fill: #84A178;
+    // }
+
+    // &__icon-second {
+    //     margin-left: 18px;
+    //     fill: #D9D9D9;
+    // }
+
+    // .swiper-pagination-bullet-active {
+    //     border-radius: 10px;
+    //     width: 12px;
+    //     height: 12px;
+    //     background-color: #84a178;
+    // }
+    .swiper-pagination {
+        position: unset;
+        padding-bottom: 40px;
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 80px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 100px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 10px;
+        width: 12px;
+        height: 12px;
+        background-color: var(--primary-bg);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+    }
+}

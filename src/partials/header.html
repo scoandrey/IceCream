@@ -1,0 +1,90 @@
+<section class="header" id="header">
+  <h2 class="visually-hidden">Navigation</h2>
+  <div class="container">
+    <div class="header__nav">
+      <a class="logo logo_bounce" href="./index.html" target="_blank" rel="norefferer noopener nofollow">
+        <img srcset="
+            ./images/logo/desktop_logo@2x.webp 120w,
+            ./images/logo/desktop_logo@1x.webp  60w,
+            ./images/logo/tablet_logo@2x.webp   96w,
+            ./images/logo/tablet_logo@1x.webp   48w,
+            ./images/logo/mobile_logo@2x.webp   80w,
+            ./images/logo/mobile_logo.webp      40w
+          " src="./images/logo/mobile_logo.png"
+          sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 40px, 100vw" alt="логотип" />
+      </a>
+
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="./index.html" class="site-nav__link">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#about" class="site-nav__link">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#products" class="site-nav__link">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#contacts" class="site-nav__link">Contact</a>
+        </li>
+      </ul>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="32" height="32">
+          <use href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
+
+      <button class="header_button header_button--geometry js-open-modal" type="button" data-modal="1">
+        Buy now
+        <svg class="header_button__icon" width="6" height="9">
+          <use href="./images/icons.svg#button_vector"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- mobile menu -->
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu" name="burger-menu">
+    <svg class="menu-toggle__icon" width="32" height="32">
+      <use href="./images/icons.svg#modal-close"></use>
+    </svg>
+  </button>
+
+
+  <a class="logo" href="#" target="_blank" rel="norefferer noopener nofollow">
+
+    <img srcset="
+        ./images/logo/tablet_logo@2x.webp 96w,
+        ./images/logo/tablet_logo@1x.webp 48w,
+        ./images/logo/mobile_logo@2x.webp 80w,
+        ./images/logo/mobile_logo.webp    40w
+      " src="./images/logo/mobile_logo.png" sizes="(min-width: 321px) 48px, (max-width: 320px) 40px, 100vw"
+      alt="логотип" />
+  </a>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="./index.html" class="mobile-menu__link">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#about" class="mobile-menu__link js-close-menu">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#products" class="mobile-menu__link js-close-menu">Our products</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#contacts" class="mobile-menu__link">Contact</a>
+    </li>
+  </ul>
+
+  <button class="header_button header_button--menu js-open-modal js-close-menu" type="button" data-modal="1">
+    Buy now
+    <svg class="header_button__icon" width="6" height="9">
+      <use href="./images/icons.svg#button_vector"></use>
+    </svg>
+  </button>
+</div>

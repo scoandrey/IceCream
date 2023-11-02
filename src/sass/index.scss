@@ -1,2 +1,24 @@
+// Utils
+@import './utils/variables';
+@import './utils/v-hidden';
+@import './utils/decimals';
+@import './utils/mixins';
+@import './utils/placeholders';
+// Base
+
 @import './common';
-@import './example';
+@import './base/base';
+@import './base/reset';
+
+// Components
+@import './components/container';
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advanteges';
+@import './components/galery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
+@import './components/modal-window';
